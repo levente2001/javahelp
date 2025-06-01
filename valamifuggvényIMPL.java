@@ -14,3 +14,16 @@ public void printSomething() {
       .sorted()
       .forEach(System.out::println);
 }
+
+
+public class valamifuggvényIMPL implements myclass {
+
+@Override
+Public void printallthings() {
+Getthings.stream.foreach(system.out.println);
+}
+
+Var manager = valamifzggvenyIMPL;
+
+Manager.getvalami();
+}
