@@ -4,7 +4,7 @@
 
 .sorted(Comparator.comparing(Thing::getName)) //Név szerint rendezi a dolgokat.
 
-.distinct() //.distinct()
+.distinct() //duplikátumok eltávolítása, Csak egyedi elemeket tart meg.
 
 @Override
 public void printSomething() {
