@@ -6,6 +6,7 @@
 
 .distinct() //duplikátumok eltávolítása, Csak egyedi elemeket tart meg.
 
+//void + print
 @Override
 public void printSomething() {
   getThings().stream()
@@ -14,6 +15,14 @@ public void printSomething() {
       .sorted()
       .forEach(System.out::println);
 }
+
+//Return értékkel
+@Override
+public Optional<Thing> findBiggestThing() {
+    return getThings().stream()
+        .max(Comparator.comparingInt(Thing::getSize));
+}
+
 
 
 public class valamifuggvényIMPL implements myclass {
