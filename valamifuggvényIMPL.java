@@ -6,6 +6,11 @@
 
 .distinct() //duplikátumok eltávolítása, Csak egyedi elemeket tart meg.
 
+.sorted(Comparator.comparing(Thing::getName).reversed())
+    .collect(Collectors.toList()); //fordított módon rendezi
+
+.max(Comparator.comparing(Thing::getName)); //legnagyobb
+
 //void + print
 @Override
 public void printSomething() {
